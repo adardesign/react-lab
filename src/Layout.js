@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
+let renderCat = function renderCat(props) {
+  return (<div> {props.cat} </div>)
+}
+
 class Layout extends Component {
    
   constructor(props) {
     super(props);
-    this.state = {catagories:[]};
+    this.state = {};
   }
 
   componentWillMount (){
@@ -15,20 +19,18 @@ class Layout extends Component {
 
   componentDidMount(){
     this.setState({
-      catagories: [1,2]
+      catagories: [1,2,3]
     })
   }
 
 
     render() {
-      const catagories = this.state.catagories.map(cat => {
-        console.log(cat)
-        return "<div> {cat} </div>";
-      })
-
       return ( 
         <div className="Layout">
-          {catagories}
+          {this.state.catagories.map(cat => {
+            console.log(cat)
+            return <div key={cat}>{cat}</div>;  
+          })}
         </div> 
       );
     }
