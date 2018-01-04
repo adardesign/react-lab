@@ -13,3 +13,12 @@ POC -
   2. List
   3. PDP 
   
+TODO:
+- Not render the parts that mobile doesnt show 
+  - Exclude component code and logic from the bundle 
+- AJAX json
+- Change the images to proper device size 
+- Router/SPA
+- Skeleton transition
+- SSR
+- basic Actions 
