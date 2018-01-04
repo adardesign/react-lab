@@ -6,8 +6,8 @@ function ProductListingSegments(props) {
   const segments = props.segments; 
   return (
 		<nav className="search-type-segments segments-ui clear cf">
-            <a href="/" className="" data-ajax-load="">All</a>
-            <a href="/" className="active" data-ajax-load="">Used</a>
+            <a href="/" className="list-segment" data-ajax-load="">All</a>
+            <a href="/" className="list-segment active" data-ajax-load="">Used</a>
 	</nav>
 		)
 };
