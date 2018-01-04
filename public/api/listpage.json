@@ -14,6 +14,18 @@
       }
     ]
   },
+  "featuredBrands": [
+      {
+        "brand": "Flashpoint",
+        "moto": "Delighting You Always",
+        "image":"https://www.adorama.com/image/lsa/brand/brandicon-canon.png"
+      },
+      {
+        "brand": "Orlit",
+        "moto": "Orlit or it never happened :).",
+        "image":"https://www.adorama.com/image/lsa/brand/brandicon-nikon.png"
+      }
+    ],
   "list": {
     "meta": {
       "alternatives": "View additional : Used DSLR Cameras and SLR Cameras (228)",

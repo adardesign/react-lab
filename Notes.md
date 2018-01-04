@@ -22,3 +22,15 @@ TODO:
 - Skeleton transition
 - SSR
 - basic Actions 
+- exlusion sections (cretio CSP)
+- 3rd party libs (that inject html in the areas that react Rendered)
+
+
+temporary  Configured to run and build multiple pages.
+npm run build  --env.appHtml=public/listing-page.html --env.appIndexJs=src/listPage-index.js
+
+npm run start --env.appHtml=public/listing-page.html --env.appIndexJs=src/listPage-index.js
+
+
+http://adardesign.com/codelab/react/build/catagory-page/index.html
+http://adardesign.com/codelab/react/build/listing-page/index.html
