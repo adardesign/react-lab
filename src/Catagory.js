@@ -3,6 +3,16 @@ import FeaturedBrands from "./components/FeaturedBrands"
 import CategoryFaqs from "./components/CategoryFaqs"
 import DeviceType from "./utils/DeviceType"
 
+  
+// Stateless componants
+  function CatChildren (props) {
+        return props.collection.map((childSub,j) => {
+            return (<li key={j*4}>
+                <a href="" title="">{childSub.title}</a>
+              </li>
+              )
+            })
+      };
 
 
 class Catagory extends Component {
@@ -28,14 +38,6 @@ class Catagory extends Component {
 
 
     render() {
-      function CatChildren(props) {
-        return props.collection.map((childSub,j) => {
-            return (<li key={j*4}>
-                <a href="" title="">{childSub.title}</a>
-              </li>
-              )
-            }) 
-      };
 
       return ( 
         <div className="Catagory">
