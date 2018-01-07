@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import CatalogRoutes from './routes/';
+import registerServiceWorker from './registerServiceWorker';
+import Loader from './loader.css';
+
+
+ReactDOM.render(<CatalogRoutes />, document.getElementById('root'));
 registerServiceWorker();

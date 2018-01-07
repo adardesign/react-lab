@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Catagory from './Catagory';
 
-class App extends Component {
+class CategoryPage extends Component {
   render() {
     return (
       <div className="App">
@@ -12,4 +12,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default CategoryPage;
