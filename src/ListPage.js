@@ -21,7 +21,7 @@ class ListPage extends Component {
   componentWillMount() {
     setTimeout(() => {
       this.setState(this.getOriginalState());      
-    },(Math.floor(Math.random() * 1000) + 1 ))
+    },(Math.floor(Math.random() * 1500) + 1 ))
   }
 
   
@@ -31,7 +31,7 @@ class ListPage extends Component {
     render() {
       if(!this.state.page){
         return (
-            <div className='loader'></div>
+            <div><link rel="stylesheet" type="text/css" href="https://www.adorama.com/Als.Mvc/nspc/combres.axd/AD_RevisedListingPageCss/-/?svfor=1day&svcfor=1day&cacheVersion=391&ID=10166"/><img height="100%" width="100%" src="http://adardesign.com/codelab/react-router/static/images/listSkeleton.png"/></div>
           )
       }
 
@@ -55,7 +55,7 @@ class ListPage extends Component {
           <div className="listPlaceholder">
             <ListToolBar meta={this.state.list.meta} />
             
-            <ProductListingSegments segments={this.state.list.segments}/>
+            {/**<ProductListingSegments segments={this.state.list.segments}/>**/}
             
             <div className="listing-container layout-80-20 layout-reverse clear">
               <div className="col1">

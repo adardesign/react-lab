@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import CatalogRoutes from './routes/';
 import registerServiceWorker from './registerServiceWorker';
-import Loader from './loader.css';
+import App from './App.css';
 
 
 ReactDOM.render(<CatalogRoutes />, document.getElementById('root'));

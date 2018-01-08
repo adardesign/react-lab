@@ -33,7 +33,7 @@ class Catagory extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState(this.getOriginalState());      
-    },(Math.floor(Math.random() * 1000) + 1 ))
+    },(Math.floor(Math.random() * 1500) + 1 ))
   }
 
 
@@ -41,7 +41,7 @@ class Catagory extends Component {
     render() {
       if(!this.state.page){
         return (
-            <div className='loader'></div>
+            <div><img src="http://adardesign.com/codelab/react-router/static/images/catSkeleton.jpg"/></div>
           )
       }
       return ( 
@@ -76,7 +76,7 @@ class Catagory extends Component {
               {this.state.deviceType === "desktop" && <CategoryFaqs faqCollection={this.state.currentCatagory.categoryFaqs} />}
               </div>
             <div className="col2">
-                <div className="category-<aside-nav">
+                <div className="category-aside-nav">
                   {this.state.subCatagories.map((sub, i) => {
                   return (<Link to={"/l/"+i} key={i*2}>{sub.title}</Link>
                   )
