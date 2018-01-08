@@ -31,7 +31,7 @@ class ListPage extends Component {
     render() {
       if(!this.state.page){
         return (
-            <div><link rel="stylesheet" type="text/css" href="https://www.adorama.com/Als.Mvc/nspc/combres.axd/AD_RevisedListingPageCss/-/?svfor=1day&svcfor=1day&cacheVersion=391&ID=10166"/><img height="100%" width="100%" src="http://adardesign.com/codelab/react-router/static/images/listSkeleton.png"/></div>
+            <div><link rel="stylesheet" type="text/css" href="https://www.adorama.com/Als.Mvc/nspc/combres.axd/AD_RevisedListingPageCss/-/?svfor=1day&svcfor=1day&cacheVersion=391&ID=10166"/><img height="100%" width="100%" src="http://adardesign.com/codelab/react-router/images/listSkeleton.png"/></div>
           )
       }
 

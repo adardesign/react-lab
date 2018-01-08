@@ -13,3 +13,6 @@
     .category-container .col2{display: none;}
   }
 
+.swiper-wrapper h2{
+  display: none;
+}

@@ -32,7 +32,7 @@ class Catagory extends Component {
 
   componentDidMount() {
     setTimeout(() => {
-      this.setState(this.getOriginalState());      
+      this.setState(this.getOriginalState());
     },(Math.floor(Math.random() * 1500) + 1 ))
   }
 
@@ -41,7 +41,7 @@ class Catagory extends Component {
     render() {
       if(!this.state.page){
         return (
-            <div><img src="http://adardesign.com/codelab/react-router/static/images/catSkeleton.jpg"/></div>
+            <div><img src="http://adardesign.com/codelab/react-router/images/catSkeleton.jpg"/></div>
           )
       }
       return ( 
