@@ -31,9 +31,7 @@ class Catagory extends Component {
   };
 
   componentDidMount() {
-    setTimeout(() => {
       this.setState(this.getOriginalState());
-    },(Math.floor(Math.random() * 1500) + 1 ))
   }
 
 
