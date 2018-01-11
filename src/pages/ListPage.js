@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import FeaturedBrands from "./components/FeaturedBrands"
-import ListToolBar from "./components/ListToolBar"
-import ProductListing from "./components/ProductListing"
-import RefineListing from "./components/RefineListing"
-import ProductListingSelectedRefinments from "./components/ProductListingSelectedRefinments"
-import ProductListingSegments from "./components/ProductListingSegments"
+import FeaturedBrands from "../components/FeaturedBrands"
+import ListToolBar from "../components/ListToolBar"
+import ProductListing from "../components/ProductListing"
+import RefineListing from "../components/RefineListing"
+import ProductListingSelectedRefinments from "../components/ProductListingSelectedRefinments"
+import ProductListingSegments from "../components/ProductListingSegments"
  
 
 class ListPage extends Component {

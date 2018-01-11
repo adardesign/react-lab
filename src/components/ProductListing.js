@@ -10,8 +10,9 @@ function ProductListing(props) {
   return (
     <div className="item-index cf" data-lazy-load="">
 		<div className="item-list clear style-is-list" id="ADOBrowse-InGrid">
-			{ list.map( sku => {
-				return <ProductListItem key={sku} item="{list}"/>
+			{ list.map( (sku, i) => {
+				console.log(sku)
+				return <ProductListItem key={i} item={i}/>
 			 })
 			}
 		</div>

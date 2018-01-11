@@ -6,21 +6,47 @@ import {
   Switch
 } from 'react-router-dom'
 
-import HomePage from '../HomePage'
-import CategoryPage from '../CategoryPage'
-import ListPageApp from '../ListPageApp'
+
+import Loadable from 'react-loadable';
+import Loading from '../components/Loading';
+
+
+// *******************
+//      Loaders
+// *******************
+const LoadableHomePage = Loadable({
+  loader: () => import('../pages/HomePage'),
+  loading () { return <Loading type="HomePage"/>}
+});
+
+const LoadableCategoryPagePage = Loadable({
+  loader: () => import('../pages/CategoryPage'),
+  loading () { return <Loading type="CategoryPage"/>}
+});
+
+const LoadableListPagePage = Loadable({
+  loader: () => import('../pages/ListPage'),
+  loading () { return <Loading type="ListPage"/>}
+});
+
+const LoadableProductPage = Loadable({
+  loader: () => import('../pages/ProductPage'),
+  loading () { return <Loading type="ProductPage"/>}
+});
+
+
+
 
 const CatalogRoutes = () => (
   <Router>
 	  <Switch>
-      	<Route path="/" exact component={HomePage}/>
-      	<Route path="/col/codeLab/react/" exact component={HomePage}/>
+      	<Route path="/" exact component={LoadableHomePage}/>
       	
-      	<Route path="/c/" component={CategoryPage}/>
-      	<Route path="/col/codeLab/react/c/" component={CategoryPage}/>
+      	<Route path="/c/" component={LoadableCategoryPagePage}/>
       	
-      	<Route path="/l/" component={ListPageApp}/>
-      	<Route path="/col/codeLab/react/l/" component={ListPageApp}/>
+      	<Route path="/l/" component={LoadableListPagePage}/>
+
+        <Route path="/p/" component={LoadableProductPage}/>
       </Switch>
   </Router>
 )

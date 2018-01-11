@@ -10,13 +10,13 @@ function ProductListItem(props) {
     <a href="</>"></a>
     <div className="item-tag-price"> </div>
     <div className="item-img">
-        <a href="</>">
+        <a href={"/p/"+props.item}>
             <img src="https://www.adorama.com/images/product/ipxkps.jpg" alt="-ALT-"/>                                                        
         </a>
         <aside className="tagging"> <em className="highlight-tag deal">Top Rated Gear</em> </aside>
     </div>
     <div className="item-details">
-        <h2 itemProp="name"> <a href="</>">
+        <h2 itemProp="name"> <a href={props.item}>
                 Pentax KP 24MP Compact TTL Autofocus DSLR Camera with Built-In Retractable P-TTL Flash, Silver
                 
             </a> </h2>

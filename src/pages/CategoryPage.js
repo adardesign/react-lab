@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import FeaturedBrands from "./components/FeaturedBrands"
-import CategoryFaqs from "./components/CategoryFaqs"
-import Breadcrumbs from "./components/Breadcrumbs"
-import DeviceType from "./utils/DeviceType"
+import FeaturedBrands from "../components/FeaturedBrands"
+import CategoryFaqs from "../components/CategoryFaqs"
+import Breadcrumbs from "../components/Breadcrumbs"
+import DeviceType from "../utils/DeviceType"
 import {Link} from 'react-router-dom'
 
   
@@ -17,7 +17,7 @@ const CatChildren = (props) => (
   );
 
 
-class Catagory extends Component {
+class CategoryPage extends Component {
 
   constructor(props) {
     super(props);
@@ -93,5 +93,5 @@ class Catagory extends Component {
 
 }
 
-export default Catagory;
+export default CategoryPage;
 
