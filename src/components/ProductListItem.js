@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 import ReviewSnapshot from './ReviewSnapshot';
 
 // stateless Component
@@ -10,9 +10,9 @@ function ProductListItem(props) {
     <a href="</>"></a>
     <div className="item-tag-price"> </div>
     <div className="item-img">
-        <a href={"/p/"+props.item}>
+        <Link to={"/p/"+props.item}>
             <img src="https://www.adorama.com/images/product/ipxkps.jpg" alt="-ALT-"/>                                                        
-        </a>
+        </Link>
         <aside className="tagging"> <em className="highlight-tag deal">Top Rated Gear</em> </aside>
     </div>
     <div className="item-details">
