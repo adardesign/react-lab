@@ -1,11 +1,16 @@
-import React from 'react';
+import React from 'react'
 
 function SimpleCMSWidget(props) {
+	function createMarkup() {
+  		return {__html: props.content};
+	}
   return (
-         <div>
-         {props.content}
-         </div>
+      <div dangerouslySetInnerHTML={createMarkup()}></div>
   )
 };
 
 export default SimpleCMSWidget;
+
+
+
+

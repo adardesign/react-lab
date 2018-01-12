@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 import Swiper from 'react-id-swiper';
-import SimpleCMSWidget from '../components/SimpleCMSWidget'
+import HomeAboutCMSWidget from '../components/HomeAboutCMSWidget'
+import LazyLoad from 'react-lazyload';
+
 
 class HomePage extends Component {
 	constructor(props){
@@ -55,7 +57,10 @@ class HomePage extends Component {
                         </ul>
                     </div>
                 </div>
-                <SimpleCMSWidget>Inner</SimpleCMSWidget>
+                <LazyLoad>
+                        <HomeAboutCMSWidget/>
+                </LazyLoad>
+            
             </div>
         );
     }
