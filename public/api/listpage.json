@@ -15,20 +15,21 @@
     ]
   },
   "featuredBrands": [
-      {
-        "brand": "Flashpoint",
-        "moto": "Delighting You Always",
-        "image":"https://www.adorama.com/image/lsa/brand/brandicon-canon.png"
-      },
-      {
-        "brand": "Orlit",
-        "moto": "Orlit or it never happened :).",
-        "image":"https://www.adorama.com/image/lsa/brand/brandicon-nikon.png"
-      }
-    ],
+    {
+      "brand": "Flashpoint",
+      "moto": "Delighting You Always",
+      "image": "https://www.adorama.com/image/lsa/brand/brandicon-canon.png"
+    },
+    {
+      "brand": "Orlit",
+      "moto": "Orlit or it never happened :).",
+      "image": "https://www.adorama.com/image/lsa/brand/brandicon-nikon.png"
+    }
+  ],
   "list": {
     "meta": {
       "alternatives": "View additional : Used DSLR Cameras and SLR Cameras (228)",
+      "listDescription": "Go digital! Choose from Adorama’s huge selection of DSLR cameras from Canon, Nikon, Sony, Pentax and more. Take your photos to the next level of image quality with a Digital SLR Camera.",
       "segments": [
         {
           "name": "all",
@@ -43,8 +44,6 @@
           "link": "/"
         }
       ],
-      "nextPage":"/",
-      "prevPage":"/",
       "count": 456,
       "showing": [
         1,
@@ -52,7 +51,7 @@
       ],
       "perpage": 15,
       "pageCount": 1,
-      "currentSort": "23",
+      "currentSort": "Popular Results",
       "sortOptions": [
         {
           "id": "1",
@@ -60,14 +59,14 @@
           "link": "/"
         }
       ],
-      "filters": {
+      "refinements": {
         "selectedRefinements": [
           {
             "name": "Body Only",
             "removeLink": "/"
           }
         ],
-        "clearFilterLink": "/"
+        "clearRefinementsLink": "/"
       }
     },
     "skus": [

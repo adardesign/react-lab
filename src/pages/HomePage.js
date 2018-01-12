@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 import Swiper from 'react-id-swiper';
+import SimpleCMSWidget from '../components/SimpleCMSWidget'
 
 class HomePage extends Component {
 	constructor(props){
@@ -8,14 +9,18 @@ class HomePage extends Component {
 		this.state = {} 
 	}
 	getOriginalState() {
-	    return {"page":{"url":"/c/cameras","title":"Cameras & Digital Cameras","breadcrumbs":[{"name":"Adorama","link":"/"},{"name":"Cameras"}]},"heros":[{"link":"/","text":"Flashpoint XPLOR 600 Pro","image":"https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"},{"link":"/","text":"Flashpoint XPLOR 600 Pro","image":"https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"},{"link":"/","text":"Flashpoint XPLOR 600 Pro","image":"https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"}],"categories":[{"id":"featured","name":"Featured","list":[{"link":"/c/Video-Equipment","text":"Digital SLRs","image":"https://www.adorama.com/col/images/cat/DigitalSLRs.jpg"},{"link":"/c/Lenses","text":"Lenses","image":"https://www.adorama.com/col/images/cat/49280.jpg"},{"link":"/c/Computers","text":"Pro Video","image":"https://www.adorama.com/col/images/cat/Lenses.jpg"},{"link":"/c/Drones-and-Action-Cams","text":"Tripods","image":"https://www.adorama.com/col/images/cat/55607.jpg"},{"link":"/c/Lighting-and-Studio","text":"Drones","image":"https://www.adorama.com/col/images/cat/119996.jpg"},{"link":"/c/Tripods-and-Supports","text":"Music","image":"https://www.adorama.com/col/images/cat/64217.jpg"},{"link":"/c/Video-Equipment","text":"Digital SLRs","image":"https://www.adorama.com/col/images/cat/DigitalSLRs.jpg"},{"link":"/c/Lenses","text":"Lenses","image":"https://www.adorama.com/col/images/cat/49280.jpg"},{"link":"/c/Computers","text":"Pro Video","image":"https://www.adorama.com/col/images/cat/Lenses.jpg"}]},{"id":"photography","name":"photography","list":[{"link":"/","text":"Flashpoint XPLOR 600 Pro","image":"https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"},{"link":"/","text":"Flashpoint XPLOR 600 Pro","image":"https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"}]},{"id":"audioVideo","name":"Audio Video","list":[{"link":"/","text":"Flashpoint XPLOR 600 Pro","image":"https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"},{"link":"/","text":"Flashpoint XPLOR 600 Pro","image":"https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"}]}]}	};
-
+        return fetch("../api/homepage.json").then((resp) => resp.json());
+    }
 	componentWillMount() {
-		 this.setState(this.getOriginalState());      
+        this.getOriginalState().then((data) => {
+         this.setState(data);      
+        });
 	}
     render() {
+        if(!this.state.page)
+            return (<div>Loading</div>)
         return (
-            <div className="App">
+            <div className="homePage">
                 <link rel="stylesheet" type="text/css" href="https://www.adorama.com/Als.Mvc/nspc/combres.axd/ADMainSiteHomePageCss/-/?svfor=1day&svcfor=1day&cacheVersion=391&ID=10166"/>
                 <Swiper>
                 	{this.state.heros.map((hero,i) => {
@@ -50,6 +55,7 @@ class HomePage extends Component {
                         </ul>
                     </div>
                 </div>
+                <SimpleCMSWidget>Inner</SimpleCMSWidget>
             </div>
         );
     }

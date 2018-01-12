@@ -8,24 +8,26 @@ you can reuse the props of a parent (onClick) and then props.onClick
 AJAX fetch
 React Router 
 
-POC - 
-  1. Catagory
-  2. List
-  3. PDP 
+Pages 
+  - [x] Home
+  - [x] Catagory
+  - [x] List
+  - [x] Product Detail 
   
 TODO:
-- Not render the parts that mobile doesnt show 
-  - Exclude component code and logic from the bundle 
-- AJAX json
-- Change the images to proper device size 
-- Router/SPA
-- Skeleton transition
-- SSR
-- basic Actions 
-- exlusion sections (cretio CSP)
-- 3rd party libs (that inject html in the areas that react Rendered)
-- State managment (redux, vs .. mobx)
+- [x] Not render the parts that mobile doesnt show 
+  - [ ] Exclude component code and logic from the bundle 
+- [x] Router/SPA
+- [x] AJAX json
+- [x] Skeleton transition
+- [ ] Change the images to proper device size 
+- [ ] SSR
+- [ ] basic Actions 
+- [ ] exlusion sections (cretio CSP)
+- [ ] 3rd party libs (that inject html in the areas that react Rendered)
+- [ ] State managment (redux, vs .. mobx)
 
+======================================================
 
 temporary  Configured to run and build multiple pages.
 npm run build  --env.appHtml=public/listing-page.html --env.appIndexJs=src/listPage-index.js
