@@ -15,14 +15,16 @@ Pages
   - [x] Product Detail 
   
 TODO:
-- [x] Not render the parts that mobile doesnt show 
+- [x] Conditional rendering the parts that mobile doesn't show 
   - [ ] Exclude component code and logic from the bundle 
 - [x] Router/SPA
 - [x] AJAX json
 - [x] Skeleton transition
 - [x] Lazy loading components
-- [ ] Change the images to proper device size 
+- [x] Uglify the bundles to reduce size
+- [ ] Simplify the webpack config
 - [ ] SSR
+- [ ] Change the images to proper device size 
 - [ ] basic Actions 
 - [ ] exlusion sections (cretio CSP)
 - [ ] 3rd party libs (that inject html in the areas that react Rendered)
