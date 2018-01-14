@@ -20,7 +20,7 @@ TODO:
 - [x] Router/SPA
 - [x] AJAX json
 - [x] Skeleton transition
-- [ ] Lazy loading components
+- [x] Lazy loading components
 - [ ] Change the images to proper device size 
 - [ ] SSR
 - [ ] basic Actions 
