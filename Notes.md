@@ -15,7 +15,7 @@ Pages
   - [x] Product Detail 
   
 TODO:
-- [x] Conditional rendering the parts that mobile doesn't show 
+- [x] Conditional rendering (Direct/inline expressions vs the current inderict workarounds to hide/move reagoins in later on the client e.g)
   - [ ] Exclude component code and logic from the bundle 
 - [x] Router/SPA
 - [x] AJAX json
@@ -30,6 +30,10 @@ TODO:
 - [ ] 3rd party libs (that inject html in the areas that react Rendered)
 - [ ] GraphQL
 - [ ] State managment (redux, vs .. mobx)
+- [ ] Build Strtatagy - Versioning 
+- [ ] Build Strtatagy - Cahching 
+- [ ] SW - caching and Offline 
+- [ ] Bundle enforcing 
 
 ======================================================
 

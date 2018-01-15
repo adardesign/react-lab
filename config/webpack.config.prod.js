@@ -258,7 +258,7 @@ module.exports = {
       },
     }),
     new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'async'
+      defaultAttribute: 'defer'
     }),
     // Makes some environment variables available to the JS code, for example:
     // if (process.env.NODE_ENV === 'production') { ... }. See `./env.js`.
