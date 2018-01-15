@@ -68,3 +68,8 @@ https://www.youtube.com/watch?v=7yA7BGos2KQ
 
 ### redux
 https://redux.js.org/docs/advanced/ExampleRedditAPI.html
+
+### Default/Async/Defer
+http://www.webpagetest.org/video/compare.php?tests=180115_TC_5a90a3ad7b85106c1620357009604228%2C180115_4F_7da2b231d4133b3225b3ba559620e4f0%2C180115_1H_23069c5424e48b7d149b6851872b793f&thumbSize=200&ival=100&end=visual
+
+`async` looks best
