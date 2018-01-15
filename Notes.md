@@ -24,6 +24,7 @@ TODO:
 - [x] Uglify the bundles to reduce size
 - [ ] Simplify the webpack config
 - [ ] SSR
+- [ ] Synchronous Data <sup id="a1">[1](#f1)</sup>
 - [ ] Change the images to proper device size 
 - [ ] basic Actions 
 - [ ] exlusion sections (cretio CSP)
@@ -73,3 +74,5 @@ https://redux.js.org/docs/advanced/ExampleRedditAPI.html
 http://www.webpagetest.org/video/compare.php?tests=180115_TC_5a90a3ad7b85106c1620357009604228%2C180115_4F_7da2b231d4133b3225b3ba559620e4f0%2C180115_1H_23069c5424e48b7d149b6851872b793f&thumbSize=200&ival=100&end=visual
 
 `async` looks best
+
+<b id="f1">1</b> Synchronous Data is when you load your react page, with data for rendering already inside, and is synchronously sent to the lient. The alternative is making an API call when your JavaScript has loaded. [↩](#a1)
