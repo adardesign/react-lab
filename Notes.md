@@ -28,6 +28,7 @@ TODO:
 - [ ] basic Actions 
 - [ ] exlusion sections (cretio CSP)
 - [ ] 3rd party libs (that inject html in the areas that react Rendered)
+- [ ] GraphQL
 - [ ] State managment (redux, vs .. mobx)
 
 ======================================================
