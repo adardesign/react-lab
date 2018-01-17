@@ -1,14 +1,22 @@
-import React from 'react'
+import React from "react";
 import {
-  BrowserRouter as Router,
   Route,
-  Link,
   Switch
 } from 'react-router-dom'
 
 
 import Loadable from 'react-loadable';
 import Loading from '../components/Loading';
+
+// todo generate from route array
+// const App = () => {
+//   return (
+//     <Switch>
+//       {routes.map((route, i) => <Route key={i} {...route} />)}
+//     </Switch>
+//   );
+// };
+
 
 
 // *******************
@@ -37,8 +45,7 @@ const LoadableProductPage = Loadable({
 
 
 
-const CatalogRoutes = () => (
-  <Router>
+const App = () => (
 	  <Switch>
       	<Route path="/" exact component={LoadableHomePage}/>
       	
@@ -48,7 +55,6 @@ const CatalogRoutes = () => (
 
         <Route path="/p/" component={LoadableProductPage}/>
       </Switch>
-  </Router>
 )
 
-export default CatalogRoutes
+export default App

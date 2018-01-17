@@ -22,8 +22,10 @@ TODO:
 - [x] Skeleton transition
 - [x] Lazy loading components
 - [x] Uglify the bundles to reduce size
-- [ ] Simplify the webpack config
-- [ ] SSR
+- [x] Simplify the webpack config
+- [x] SSR
+- [x] SSR hydrate
+- [x] SSR + routes + split code
 - [ ] Synchronous Data <sup id="a1">[1](#f1)</sup>
 - [ ] Change the images to proper device size 
 - [ ] basic Actions 
