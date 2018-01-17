@@ -9325,7 +9325,7 @@ module.exports = camelize;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _react = __webpack_require__(0);
@@ -9345,7 +9345,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @since 09 Feb 2017
  */
 exports.default = function () {
-  return _react2.default.createElement('div', null);
+    return _react2.default.createElement(
+        'div',
+        null,
+        'YAY'
+    );
 };
 
 /***/ }),

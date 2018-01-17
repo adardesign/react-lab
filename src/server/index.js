@@ -1,19 +1,13 @@
-/**
- * index.js
- *
- * (C) 2017 mobile.de GmbH
- *
- * @author <a href="mailto:pahund@team.mobile.de">Patrick Hund</a>
- * @since 09 Feb 2017
- */
-/* eslint-disable no-console */
-
 import express from 'express';
 import React from 'react';
 import App from '../shared/App';
-import { StaticRouter as Router, matchPath } from 'react-router';
-import sourceMapSupport from 'source-map-support';
-import render from './render';
+//import NoMatch from '../shared/NoMatch';
+//import Error from '../shared/Error';
+import ReactDOMServer from 'react-dom/server'
+import { StaticRouter } from 'react-router'
+
+
+//import render from './render';
 import fetch from 'node-fetch';
 
 const routes = [
@@ -21,33 +15,33 @@ const routes = [
     '/g/:gistId'
 ];
 
-sourceMapSupport.install();
+// sourceMapSupport.install();
 
 const app = express();
 app.use('/static', express.static('./dist'));
 
 app.get('*', (req, res) => {
-    const match = routes.reduce((acc, route) => matchPath(req.url, route, { exact: true }) || acc, null);
-    if (!match) {
-        return res.status(404).send("No match");
-       
-    }
-    return res("ee");
-
-    // fetch('https://api.github.com/gists')
-    //     .then(r => r.json())
-    //     .then(gists => {
-    //         res.status(200).send(render(
-    //             (
-    //                 <Router context={{}} location={req.url}>
-    //                     <App gists={gists} />
-    //                 </Router>
-    //             ), gists
-    //         ));
-    //     }).catch(err => {
-    //         console.error(err);
-    //         res.status(500).send(render(<Error />));
-    //     });
+    fetch('https://www.adorama.com/col/api/homepage.json')
+        .then(r => r.json())
+        .then(pageData => {
+            res.status(200)
+            const context = {};
+            const html = ReactDOMServer.renderToString(
+            <StaticRouter location={req.url} context={context}>
+                <App pageData={pageData}/>
+            </StaticRouter>
+        )
+        if (context.url) {
+            res.writeHead(302, {
+                Location: context.url
+            })
+            res.end();
+        }
+        res.send(html);
+   }).catch(err => {
+            console.error(err);
+            res.status(500).send("oops");
+        });
 });
 
 app.listen(3000, () => console.log('Demo app listening on port 3000'));
