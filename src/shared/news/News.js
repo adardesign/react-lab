@@ -36,7 +36,7 @@ class News extends Component {
     return (
       <div>
         <Link to="/">Home</Link>
-      <NewsList news={news} />
+         <NewsList news={news} />
       </div>
       )
   }
