@@ -1,18 +1,13 @@
-/**
- * App.js
- *
- * (C) 2017 mobile.de GmbH
- *
- * @author <a href="mailto:pahund@team.mobile.de">Patrick Hund</a>
- * @since 09 Feb 2017
- */
-import React, { Component } from 'react';
-import { Link, Route } from 'react-router-dom';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import routes from "./routes";
 
+const App = () => {
+  return (
+    <Switch>
+      {routes.map((route, i) => <Route key={i} {...route} />)}
+    </Switch>
+  );
+};
 
-export default () => (
-    <div>
-        YAY
-    </div>
-);
-
+export default App;
