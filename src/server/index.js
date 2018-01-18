@@ -4,6 +4,7 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 import { StaticRouter, matchPath } from "react-router-dom";
 import serialize from "serialize-javascript";
+import Routes from "../shared/routes/Routes";
 import App from "../shared/routes/App";
 import Loadable from 'react-loadable';
 import path from 'Path';
@@ -18,13 +19,11 @@ const app = express();
 
 app.use(cors());
 app.use('/dist', express.static(path.join(__dirname, 'dist')));
+app.use('/api', express.static(path.join(__dirname, 'api')));
 
-app.get("/api/news", (req, res) => {
-  res.json([]);
-});
-
-app.get("/", (req, res, next) => {
-  const activeRoute = routes.find(route => matchPath(req.url, route));
+app.get("**", (req, res, next) => {
+   let modules = [];
+  const activeRoute = Routes.find(route => matchPath(req.url, route));
 
   const requestInitialData =
     activeRoute.component.requestInitialData && activeRoute.component.requestInitialData();

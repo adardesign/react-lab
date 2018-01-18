@@ -4,6 +4,7 @@ import CategoryFaqs from "../components/CategoryFaqs"
 import Breadcrumbs from "../components/Breadcrumbs"
 import DeviceType from "../utils/DeviceType"
 import {Link} from 'react-router-dom'
+import "isomorphic-fetch";
 
   
 // Stateless componants

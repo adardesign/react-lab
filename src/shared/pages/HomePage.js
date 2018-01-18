@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import Swiper from 'react-id-swiper';
 import HomeAboutCMSWidget from '../components/HomeAboutCMSWidget'
 import LazyLoad from 'react-lazyload';
+import "isomorphic-fetch";
 
 
 class HomePage extends Component {

@@ -2,7 +2,7 @@ __isBrowser__ = false;
 exports.ids = [3];
 exports.modules = {
 
-/***/ 87:
+/***/ 37:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

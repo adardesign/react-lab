@@ -24,6 +24,9 @@ const browserConfig = {
       banner: "__isBrowser__ = true;",
       raw: true,
       include: /\.js$/
+    }),
+   new ReactLoadablePlugin({
+      filename: './dist/react-loadable.json',
     })
   ]
 };
@@ -33,7 +36,8 @@ const serverConfig = {
   target: "node",
   output: {
     path: __dirname+"/dist/server/",
-    filename: "index.js"
+    filename: "index.js",
+    libraryTarget: 'commonjs2'
   },
     module: {
     rules: [

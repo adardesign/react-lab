@@ -6,6 +6,7 @@ import ProductListing from "../components/ProductListing"
 import RefineListing from "../components/RefineListing"
 import ProductListingSelectedRefinments from "../components/ProductListingSelectedRefinments"
 import ProductListingSegments from "../components/ProductListingSegments"
+import "isomorphic-fetch";
  
 
 class ListPage extends Component {
