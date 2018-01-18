@@ -1,0 +1,117 @@
+{
+  "page": {
+    "url": "/c/cameras",
+    "title": "Cameras & Digital Cameras",
+    "breadcrumbs": [
+      {
+        "name": "Adorama",
+        "link": "/"
+      },
+      {
+        "name": "Cameras"
+      }
+    ]
+  },
+  "heros": [
+    {
+      "link": "/",
+      "text": "Flashpoint XPLOR 600 Pro",
+      "image": "https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"
+    },
+    {
+      "link": "/",
+      "text": "Flashpoint XPLOR 600 Pro",
+      "image": "https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"
+    },
+    {
+      "link": "/",
+      "text": "Flashpoint XPLOR 600 Pro",
+      "image": "https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "featured",
+      "name": "Featured",
+      "list": [
+        {
+          "link": "/c/Video-Equipment",
+          "text": "Digital SLRs",
+          "image": "https://www.adorama.com/col/images/cat/DigitalSLRs.jpg"
+        },
+        {
+          "link": "/c/Lenses",
+          "text": "Lenses",
+          "image": "https://www.adorama.com/col/images/cat/49280.jpg"
+        },
+        {
+          "link": "/c/Computers",
+          "text": "Pro Video",
+          "image": "https://www.adorama.com/col/images/cat/Lenses.jpg"
+        },
+        {
+          "link": "/c/Drones-and-Action-Cams",
+          "text": "Tripods",
+          "image": "https://www.adorama.com/col/images/cat/55607.jpg"
+        },
+        {
+          "link": "/c/Lighting-and-Studio",
+          "text": "Drones",
+          "image": "https://www.adorama.com/col/images/cat/119996.jpg"
+        },
+        {
+          "link": "/c/Tripods-and-Supports",
+          "text": "Music",
+          "image": "https://www.adorama.com/col/images/cat/64217.jpg"
+        },
+        {
+          "link": "/c/Video-Equipment",
+          "text": "Digital SLRs",
+          "image": "https://www.adorama.com/col/images/cat/DigitalSLRs.jpg"
+        },
+        {
+          "link": "/c/Lenses",
+          "text": "Lenses",
+          "image": "https://www.adorama.com/col/images/cat/49280.jpg"
+        },
+        {
+          "link": "/c/Computers",
+          "text": "Pro Video",
+          "image": "https://www.adorama.com/col/images/cat/Lenses.jpg"
+        }
+      ]
+    },
+    {
+      "id": "photography",
+      "name": "photography",
+      "list": [
+        {
+          "link": "/",
+          "text": "Flashpoint XPLOR 600 Pro",
+          "image": "https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"
+        },
+        {
+          "link": "/",
+          "text": "Flashpoint XPLOR 600 Pro",
+          "image": "https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"
+        }
+      ]
+    },
+    {
+      "id": "audioVideo",
+      "name": "Audio Video",
+      "list": [
+        {
+          "link": "/",
+          "text": "Flashpoint XPLOR 600 Pro",
+          "image": "https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"
+        },
+        {
+          "link": "/",
+          "text": "Flashpoint XPLOR 600 Pro",
+          "image": "https://www.adorama.com/images/herobanners/1610HomeHero-Flashpoint-01-04-18_15917.jpg"
+        }
+      ]
+    }
+  ]
+}
