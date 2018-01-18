@@ -5,7 +5,9 @@ const browserConfig = {
   entry: "./src/browser/index.js",
   output: {
     path: __dirname+"/dist/client/",
-    filename: "[name].bundle.js"
+    filename: "bundle.js",
+    chunkFilename: '[name].[chunkhash].js'
+
   },
   module: {
     rules: [
@@ -22,11 +24,7 @@ const browserConfig = {
       banner: "__isBrowser__ = true;",
       raw: true,
       include: /\.js$/
-    }),
-  new ReactLoadablePlugin({
-      filename: './dist/cleint-react-loadable.json',
     })
-
   ]
 };
 
@@ -35,8 +33,7 @@ const serverConfig = {
   target: "node",
   output: {
     path: __dirname+"/dist/server/",
-    filename: "index.js",
-    libraryTarget: "commonjs2"
+    filename: "index.js"
   },
     module: {
     rules: [

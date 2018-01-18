@@ -6,6 +6,8 @@
     "react",
   ],
   "plugins": [
-    "transform-class-properties",
+    "react-loadable/babel",
   ],
 }
+
+

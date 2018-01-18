@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start-dev": "NODE_ENV=development webpack --config webpack.config.babel.js & NODE_ENV=development nodemon server.js",
+    "start-dev": "NODE_ENV=development webpack --config webpack.config.babel.js & NODE_ENV=development nodemon dist/server/index.js",
     "webpack": "webpack --config webpack.config.babel.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,9 +18,12 @@
     "isomorphic-fetch": "^2.2.1",
     "lodash.orderby": "^4.6.0",
     "node-time-ago": "^1.0.0",
+    "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dev-utils": "^4.2.1",
     "react-dom": "^16.2.0",
+    "react-id-swiper": "^1.5.7",
+    "react-lazyload": "^2.3.0",
     "react-loadable": "^5.3.1",
     "react-router-dom": "^4.2.2",
     "serialize-javascript": "^1.4.0",
