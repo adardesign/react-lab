@@ -8,9 +8,9 @@ import Loadable from 'react-loadable';
 
 window.main = () => {
   Loadable.preloadReady().then(() => {
-    ReactDOM.hydrate(<BrowserRouter>
+    hydrate(<BrowserRouter>
     <App />
   </BrowserRouter>,
-	document.getElementById('app'));
+	document.getElementById('root'));
   });
 };

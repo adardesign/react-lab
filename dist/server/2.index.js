@@ -1091,7 +1091,7 @@ Request.prototype.clone = function() {
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/components/FeaturedBrands.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/FeaturedBrands.js";
 
 var _react = __webpack_require__(0);
 
@@ -1194,7 +1194,7 @@ exports.default = FeaturedBrands;
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/components/CategoryFaqs.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/CategoryFaqs.js";
 
 var _react = __webpack_require__(0);
 
@@ -1305,7 +1305,7 @@ exports.default = CategoryFaqs;
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/components/Breadcrumbs.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/Breadcrumbs.js";
 
 var _react = __webpack_require__(0);
 
@@ -1370,7 +1370,7 @@ exports.__esModule = true;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/pages/CategoryPage.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/pages/CategoryPage.js";
 
 var _react = __webpack_require__(0);
 

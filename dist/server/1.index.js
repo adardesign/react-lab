@@ -1091,7 +1091,7 @@ Request.prototype.clone = function() {
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/components/FeaturedBrands.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/FeaturedBrands.js";
 
 var _react = __webpack_require__(0);
 
@@ -1194,7 +1194,7 @@ exports.default = FeaturedBrands;
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/components/ListToolBar.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/ListToolBar.js";
 
 var _react = __webpack_require__(0);
 
@@ -1426,7 +1426,7 @@ exports.default = ListToolBar;
 
 
 exports.__esModule = true;
-var _jsxFileName = '/Users/eliazerbraun/codeLab/react-lab/src/shared/components/ProductListing.js';
+var _jsxFileName = '/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/ProductListing.js';
 
 var _react = __webpack_require__(0);
 
@@ -1485,7 +1485,7 @@ exports.default = ProductListing;
 
 
 exports.__esModule = true;
-var _jsxFileName = '/Users/eliazerbraun/codeLab/react-lab/src/shared/components/ProductListItem.js';
+var _jsxFileName = '/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/ProductListItem.js';
 
 var _react = __webpack_require__(0);
 
@@ -2084,7 +2084,7 @@ exports.default = ProductListItem;
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/components/ReviewSnapshot.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/ReviewSnapshot.js";
 
 var _react = __webpack_require__(0);
 
@@ -2399,7 +2399,7 @@ exports.default = ReviewSnapshot;
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/components/RefineListing.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/RefineListing.js";
 
 var _react = __webpack_require__(0);
 
@@ -3251,7 +3251,7 @@ exports.default = RefineListing;
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/components/ProductListingSelectedRefinments.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/ProductListingSelectedRefinments.js";
 
 var _react = __webpack_require__(0);
 
@@ -3355,7 +3355,7 @@ exports.default = ProductListingSelectedRefinments;
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/components/ProductListingSegments.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/components/ProductListingSegments.js";
 
 var _react = __webpack_require__(0);
 
@@ -3409,7 +3409,7 @@ exports.default = ProductListingSegments;
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/pages/ListPage.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/pages/ListPage.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 

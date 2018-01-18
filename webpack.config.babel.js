@@ -4,7 +4,7 @@ import { ReactLoadablePlugin } from 'react-loadable/webpack';
 const browserConfig = {
   entry: "./src/browser/index.js",
   output: {
-    path: __dirname+"/dist/client/",
+    path: __dirname+"/dist/",
     filename: "bundle.js",
     chunkFilename: '[name].[chunkhash].js'
 
@@ -35,8 +35,8 @@ const serverConfig = {
   entry: "./src/server/index.js",
   target: "node",
   output: {
-    path: __dirname+"/dist/server/",
-    filename: "index.js",
+    path: __dirname+"/dist/",
+    filename: "server.js",
     libraryTarget: 'commonjs2'
   },
     module: {

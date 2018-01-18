@@ -18,8 +18,9 @@ const stats = require('../../dist/react-loadable.json');
 const app = express();
 
 app.use(cors());
-app.use('/dist', express.static(path.join(__dirname, 'dist')));
-app.use('/api', express.static(path.join(__dirname, 'api')));
+//app.use(express.static('dist'))
+app.use('/dist', express.static('dist'))
+app.use('/api', express.static('api'))
 
 app.get("**", (req, res, next) => {
    let modules = [];
@@ -49,13 +50,16 @@ if (context.url) {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>W Combinator</title>
+          <title>BS"D</title>
+          <link rel="stylesheet" type="text/css" href="https://www.adorama.com/Als.Mvc/nspc/combres.axd/AD_MainCss/-/?svfor=1day&svcfor=1day&cacheVersion=401&ID=10426"/>
+          <link rel="stylesheet" type="text/css" href="https://www.adorama.com/Als.Mvc/nspc/combres.axd/ADMainSiteHomePageCss/-/?svfor=1day&svcfor=1day&cacheVersion=401&ID=10426"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
           <script>window.__initialData__ = ${serialize(initialData)}</script>
         </head>
 
         <body>
           <div id="root">${markup}</div>
-          <script src="/dist/main.js"></script>
+          <script src="/dist/bundle.js"></script>
           ${scripts.map(script => {
             return `<script src="/dist/${script.file}"></script>`
           }).join('\n')}

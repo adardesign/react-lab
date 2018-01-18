@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start-dev": "NODE_ENV=development webpack --config webpack.config.babel.js & NODE_ENV=development nodemon dist/server/index.js",
+    "start-dev": "NODE_ENV=development webpack --config webpack.config.babel.js & NODE_ENV=development nodemon dist/server.js",
     "webpack": "webpack --config webpack.config.babel.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

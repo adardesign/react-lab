@@ -9,7 +9,7 @@ exports.modules = {
 
 
 exports.__esModule = true;
-var _jsxFileName = "/Users/eliazerbraun/codeLab/react-lab/src/shared/pages/ProductPage.js";
+var _jsxFileName = "/Users/eliazerbraun/codeLab/react-labBU/src/shared/pages/ProductPage.js";
 
 var _react = __webpack_require__(0);
 
