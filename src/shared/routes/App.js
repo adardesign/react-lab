@@ -7,10 +7,10 @@ import {
 
 import routes from "./routes";
 
-const App = () => {
+const App = (props) => {
   return (
     <Switch>
-      {routes.map((route, i) => <Route key={i} {...route} />)}
+      {routes.map((route, i) => <Route key={i} {...route} {...props} />)}
     </Switch>
   );
 };
