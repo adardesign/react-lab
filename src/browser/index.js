@@ -2,15 +2,14 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import App from "../shared/routes/App";
 import { hydrate } from "react-dom"
-import Loadable from 'react-loadable';
+import { loadComponents } from 'loadable-components'
 
 
 
-window.main = () => {
-  Loadable.preloadReady().then(() => {
-    hydrate(<BrowserRouter>
-    <App />
-  </BrowserRouter>,
+loadComponents().then(() => {
+    hydrate(
+    	<BrowserRouter>
+    		<App />
+  		</BrowserRouter>,
 	document.getElementById('root'));
-  });
-};
+ });

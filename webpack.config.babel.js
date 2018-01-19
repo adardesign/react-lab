@@ -1,13 +1,10 @@
 import webpack from "webpack";
-import { ReactLoadablePlugin } from 'react-loadable/webpack';
 
 const browserConfig = {
   entry: "./src/browser/index.js",
   output: {
     path: __dirname+"/dist/",
-    filename: "bundle.js",
-    chunkFilename: '[name].[chunkhash].js'
-
+    filename: "bundle.js"
   },
   module: {
     rules: [
@@ -19,16 +16,7 @@ const browserConfig = {
       }
     ]
   },
-  plugins: [
-  new webpack.BannerPlugin({
-      banner: "__isBrowser__ = true;",
-      raw: true,
-      include: /\.js$/
-    }),
-   new ReactLoadablePlugin({
-      filename: './dist/react-loadable.json',
-    })
-  ]
+  plugins: []
 };
 
 const serverConfig = {
@@ -36,8 +24,7 @@ const serverConfig = {
   target: "node",
   output: {
     path: __dirname+"/dist/",
-    filename: "server.js",
-    libraryTarget: 'commonjs2'
+    filename: "server.js"
   },
     module: {
     rules: [
@@ -49,13 +36,7 @@ const serverConfig = {
       }
     ]
   },
-  plugins: [
-    new webpack.BannerPlugin({
-      banner: "__isBrowser__ = false;",
-      raw: true,
-      include: /\.js$/
-    })
-  ]
+  plugins: []
 };
 
 module.exports = [browserConfig, serverConfig];

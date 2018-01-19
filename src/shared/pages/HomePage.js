@@ -13,7 +13,7 @@ class HomePage extends Component {
         this.state = this.props.data ? this.props.data : {};
     }
     getOriginalState() {
-        return fetch("../api/homepage.json").then( (resp) => resp.json() );
+        return fetch("../../api/homepage.json").then( (resp) => resp.json() );
     }
     componentWillMount() {
         if( !this.props.data )
@@ -27,7 +27,7 @@ class HomePage extends Component {
     
     render() {
         if(!this.state.page)
-            return (<div>Loading ITEMs</div>)
+            return (<div>Loading Page</div>)
         return (
             <div className="homePage">
                 <link rel="stylesheet" type="text/css" href="https://www.adorama.com/Als.Mvc/nspc/combres.axd/ADMainSiteHomePageCss/-/?svfor=1day&svcfor=1day&cacheVersion=391&ID=10166"/>
