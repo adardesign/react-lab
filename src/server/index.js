@@ -7,11 +7,8 @@ import serialize from "serialize-javascript";
 import Routes from "../shared/routes/Routes";
 import App from "../shared/routes/App";
 import { getLoadableState } from 'loadable-components/server'
-import path from 'Path';
+import path from 'path';
 import "isomorphic-fetch";
-
-import { Capture } from 'react-loadable';
-import { getBundles } from 'react-loadable/webpack';
 
 
 let context = {}
@@ -24,26 +21,21 @@ app.use(cors());
 app.use('/dist', express.static('dist'))
 app.use('/api', express.static('api'))
 
-app.get("/", (req, res, next) => {
+app.get("**", (req, res, next) => {
 
-console.log("----------REQUST")
 
 const app = (
   <StaticRouter location={req.url} context={context}>
     <App />
   </StaticRouter>
 )
-console.log("----------app", app)
 
-   // let dataFetch = fetch("../../api/homepage.json").then( (resp) => resp.json() );
-  // console.log(app)
+   let dataFetch = fetch("../../api/homepage.json").then( (resp) => resp.json() );
 
   // dataFetch.then((data) => {
-getLoadableState(app).then(loadableState => {
-  console.log("loadableState", loadableState)
+    getLoadableState(app).then(loadableState => {
   
   const html = renderToString(<app />)
-    console.log("html", html)
 
   // Insert style tag into page
   const page = `
@@ -51,16 +43,18 @@ getLoadableState(app).then(loadableState => {
     <html>
     <head></head>
     <body>
+      Hello!
       <div id="main">${html}</div>
       ${loadableState.getScriptTag()}
     </body>
     </html>
     `
-     console.log(page); 
       res.send(page)
+  //  });
+  
+   });
   });
- })
- 
+
 
 
   app.listen(3000, () => {

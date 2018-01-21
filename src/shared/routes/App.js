@@ -4,14 +4,19 @@ import {
   Switch
 } from 'react-router-dom'
 
-import routes from "./routes";
+import Routes from "./Routes";
 
 const App = (props) => {
   return (
     <Switch>
-      {routes.map((route, i) => <Route key={i} {...route} {...props} />)}
+      {Routes.map((route, i) => <Route key={i} render={ (routeProps) => {  
+      		let Comp = route.component;
+      		console.log(route);
+      		<Comp data={props.data} {...routeProps}  />}
+      	}/>
+      )}
     </Switch>
   );
-};
+}
 
 export default App;
