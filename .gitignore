@@ -9,6 +9,7 @@
 # production
 /build
 /dist 
+/monitor
 # misc
 .DS_Store
 .env.local
