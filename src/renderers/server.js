@@ -3,7 +3,7 @@ import ReactDOMServer from 'react-dom/server';
 import axios from 'axios';
 import StateApi from 'state-api';
 
-import App from 'components/App';
+import Page from 'components/Page';
 import config from 'config';
 
 const serverRender = async () => {
@@ -12,7 +12,7 @@ const serverRender = async () => {
 
   return {
     initialMarkup: ReactDOMServer.renderToString(
-      <App store={store} />
+      <Page store={store} />
     ),
     initialData: resp.data,
   };

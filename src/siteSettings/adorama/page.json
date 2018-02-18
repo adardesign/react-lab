@@ -1,0 +1,30 @@
+{
+  "siteId":"AD",
+  "headerNav":[
+      
+  ],
+  "footerNav":[
+    {
+      "name":"Who We Are",
+      "links":[
+        {
+          "name":"About Adorama",
+          "link":"/"
+        },
+        {
+          "name":"Adorama Reviews",
+          "link":"/"
+        }
+        {
+          "name":"Map & Directions",
+          "link":"/"
+        }
+        {
+          "name":"Events",
+          "link":"/"
+        }
+      ]
+      
+    }
+  ]
+}
