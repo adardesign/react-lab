@@ -1,6 +1,6 @@
 const path = require("path");
 const WebpackMonitor = require("webpack-monitor");
-const webpack = require('webpack');
+const webpack = require("webpack");
 const config = {
   entry: ["babel-polyfill", "./src/components/Index.js"],
   output: {
@@ -18,9 +18,9 @@ const config = {
     new webpack.optimize.UglifyJsPlugin({
       test: /\.js($|\?)/i,
       exclude: /node_modules/,
-      compressor: { 
+      compressor: {
         warnings: false
-       }
+      }
     })
   ]
 };
