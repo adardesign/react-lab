@@ -1,27 +1,43 @@
-const path = require("path");
-const WebpackMonitor = require("webpack-monitor");
-const webpack = require("webpack");
+const path = require('path');
+const webpack = require('webpack');
+
 const config = {
-  entry: ["babel-polyfill", "./src/components/Index.js"],
+  resolve: {
+    modules: [path.resolve('./src'), path.resolve('./node_modules')]
+  },
+  entry: {
+    vendor: [
+      'babel-polyfill',
+      'react',
+      'react-dom',
+      'prop-types',
+      'axios',
+      'lodash.debounce',
+      'lodash.pickby'
+    ],
+    app: ['./src/renderers/dom.js']
+  },
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "bundle.js"
+    path: path.resolve(__dirname, 'public'),
+    filename: '[name].js'
   },
   module: {
-    rules: [{ test: /\.js$/, exclude: /node_modules/, use: "babel-loader" }]
+    rules: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['react', 'env', 'stage-2']
+        }
+      }
+    }]
   },
   plugins: [
-    new WebpackMonitor({
-      capture: true,
-      launch: true
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      test: /\.js($|\?)/i,
-      exclude: /node_modules/,
-      compressor: {
-        warnings: false
-      }
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor'
     })
   ]
 };
+
 module.exports = config;
